@@ -20,7 +20,6 @@ let semester_select = document.getElementById("semester-select");
 let affiliation_select = document.getElementById("affiliation-select");
 let total_credits_display = document.getElementById("total-credits");
 
-loadTimetable();
 
 
 
@@ -85,26 +84,7 @@ async function saveTimetable() {
 }
 
 
-async function loadTimetable() {
-    const userId = getMyUserId();
 
-    const res = await fetch(`/api/timetable/${userId}`);
-    const registered = await res.json();
-
-    console.log("☁️ クラウドからロードした時間割:", registered);
-
-    if (registered && registered.length > 0) {
-        registered.forEach((data) => {
-            let box = document.querySelector(`td[data-day="${data.day}"][data-period="${data.period}"]`);
-            if (box) {
-                box.textContent = data.courseName;
-                box.setAttribute("data-course-id", data.courseId);
-                box.classList.remove("hover");
-            }
-        });
-        updateTotalCredits();
-    }
-}
 
 
 function openModal(title, info) { //modalの出力関数
