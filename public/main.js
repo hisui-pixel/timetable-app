@@ -236,7 +236,7 @@ async function showAvailableCourse(day, period,grade,semester) {
 
 
     let availableCourses = mockCourses.filter(course =>
-        course.day === day && String(course.period) === String(period)&&course.semester===semester
+        course.day === day && String(course.period) === String(period)&&course.semester.includes(semester)
     );
 
     if (availableCourses.length > 0) { //授業が入っているときの処理
