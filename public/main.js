@@ -227,10 +227,10 @@ function createReviews(courseID) {
 
 async function showAvailableCourse(day, period,grade,semester) {
 
-     if (mockCourses.length === 0) {
-        console.log("読み込み中");
+    if (mockCourses.length === 0) {
+        course_list_container.innerHTML = "<p>読み込み中...</p>";
         return;
-    }
+}   
 
     let reviews = await getReviews();
     console.log(semester);
