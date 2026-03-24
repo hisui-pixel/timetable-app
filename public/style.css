@@ -355,3 +355,71 @@ h1 {
     cursor: not-allowed;
     transform: none;
 }
+
+/* =========================================
+   📱 ここから下はスマホ専用のデザイン設定
+   ========================================= */
+@media screen and (max-width: 768px) {
+    /* ① 全体の幅をスマホ画面に合わせる */
+    #app, .filter-container, .blank-box {
+        width: 100%;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 20px; /* タイトルを少し小さく */
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    /* ② 【超重要】表を潰さずに「横スクロール」させる！ */
+    /* これで文字がぐちゃぐちゃになるのを防ぎます */
+    .blank-box {
+        display: block;
+        overflow-x: auto; /* はみ出た分は横にスワイプできるようにする */
+        white-space: nowrap; /* 勝手に改行させない */
+        -webkit-overflow-scrolling: touch; /* スマホでヌルヌルスクロールさせる */
+    }
+
+    /* スマホの時のマスのサイズを調整 */
+    .blank-box td {
+        min-width: 70px; /* マスがこれ以上細くならないように死守 */
+        height: 80px;
+        font-size: 12px; /* 文字を少し小さく */
+        padding: 4px;
+        white-space: normal; /* マスの中の文字は折り返す */
+    }
+
+    /* ③ 上部のボタン類を「縦並び」にして押しやすくする */
+    .filter-container {
+        flex-direction: column; /* 横並びから縦並びに変更 */
+        align-items: stretch; /* 横幅いっぱいに広げる */
+        padding: 10px;
+    }
+
+    .filter-select, .auto-register-btn, .auto-remove-btn {
+        width: 100%; /* ボタンを横幅100%にしてタップしやすく */
+        margin-bottom: 5px;
+    }
+
+    /* 単位数も真ん中に寄せる */
+    .summary-container {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* ④ モーダル（ポップアップ）をスマホ画面に収める */
+    .modal-content {
+        padding: 20px; /* 余白40pxはスマホだとデカすぎるので減らす */
+        width: 95%;
+        max-height: 90vh; /* 画面からはみ出さないように */
+        overflow-y: auto; /* 縦スクロール可能に */
+    }
+
+    #modal-title {
+        font-size: 18px;
+    }
+}
