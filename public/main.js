@@ -376,6 +376,7 @@ async function showAvailableCourse(day, period,grade,semester) {
         p.textContent = "このコマの授業候補はありません";
         course_list_container.appendChild(p);
     }
+    isLoading = false;
 }
 
 
