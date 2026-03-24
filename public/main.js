@@ -62,6 +62,7 @@ async function deleteReview(reviewId) {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
+            reviewId: reviewId,
             authorId: getMyUserId()
         })
     });

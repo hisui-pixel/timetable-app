@@ -30,6 +30,27 @@ export default async function handler(req, res) {
             await reviewsCollection.insertOne(newReview);
             return res.status(200).json({ message: "MongoDBに保存成功！", data: newReview });
         }
+
+        else if (req.method === 'DELETE') {
+            const { reviewId, authorId } = req.body;
+
+            // ① レビューを取得
+            const review = await reviewsCollection.findOne({ id: reviewId });
+
+            if (!review) {
+                return res.status(404).json({ error: "レビューが存在しない" });
+            }
+
+            // ② 投稿者チェック
+            if (review.authorId !== authorId) {
+                return res.status(403).json({ error: "削除権限がありません" });
+            }
+
+            // ③ 削除
+            await reviewsCollection.deleteOne({ id: reviewId });
+
+            return res.status(200).json({ message: "削除成功" });
+        }
         
         else {
             return res.status(405).json({ message: "許可されていない操作です" });
