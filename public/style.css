@@ -355,46 +355,42 @@ h1 {
     cursor: not-allowed;
     transform: none;
 }
-
 /* =========================================
-   📱 スマホ専用のデザイン設定（修正版）
+   📱 スマホ専用のデザイン設定（横スクロールなし・一画面ピタッと収め版）
    ========================================= */
 @media screen and (max-width: 768px) {
-    /* ① 全体の幅をスマホ画面に合わせる（ボタン周りは除外！） */
+    /* ① 全体を画面幅に合わせる（ボタン周りはそのまま！） */
     #app, .blank-box {
         width: 100%;
-        padding: 0 5px;
         box-sizing: border-box;
     }
 
-    h1 {
-        font-size: 20px;
-        margin-top: 10px;
-        margin-bottom: 15px;
-    }
-
-    /* ② 表を潰さずに「横スクロール」させる（これがないとスマホで文字が潰れます） */
+    /* ② スクロールを廃止し、表全体の隙間を詰める */
     .blank-box {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
+        border-spacing: 2px; /* マスの隙間を5pxから2pxにギュッと詰める */
+        margin: 0;
     }
 
-    /* スマホの時のマスのサイズを調整 */
+    /* ③ 【超重要】左側の「時間」の列を限界まで小さくする */
+    .blank-box th {
+        font-size: 9px; /* 文字を限界まで小さく */
+        width: 35px;    /* 幅を極細に */
+        padding: 2px 0;
+        line-height: 1.2; /* 行間を詰める */
+    }
+
+    /* ④ 授業が入るマス（月〜金）のサイズ調整 */
     .blank-box td {
-        min-width: 70px;
-        height: 80px;
-        font-size: 12px;
-        padding: 4px;
-        white-space: normal; /* マスの中の文字は折り返す */
+        height: 75px;    /* 縦幅を少しコンパクトに */
+        font-size: 11px; /* 授業名が入りやすいように少し小さく */
+        padding: 3px;    /* 内側の余白を削って広く使う */
     }
 
-    /* ③ モーダル（ポップアップ）をスマホ画面に収める */
+    /* ⑤ モーダル（ポップアップ）のはみ出し防止 */
     .modal-content {
-        padding: 20px;
+        padding: 15px;
         width: 95%;
-        max-height: 90vh;
+        max-height: 85vh;
         overflow-y: auto;
     }
 
