@@ -224,13 +224,19 @@ function createReviews(courseID) {
     return reviews;
 }
 
+let isLoading = false;
 
 async function showAvailableCourse(day, period,grade,semester) {
 
     if (mockCourses.length === 0) {
         course_list_container.innerHTML = "<p>読み込み中...</p>";
         return;
-}   
+    }
+
+    if (isLoading) return;
+    isLoading = true;
+    
+    course_list_container.innerHTML = "";
 
     let reviews = await getReviews();
     console.log(semester);
