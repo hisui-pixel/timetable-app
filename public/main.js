@@ -1,9 +1,6 @@
 import allData from "./data.js";
 
-let mockCourses = [];
-Object.values(allData).forEach(courseArray => {
-    mockCourses.push(...courseArray);
-});
+let mockCourses = allData;
 
 let blank_boxes = document.querySelectorAll("td");
 let modal = document.getElementById("course-modal");
