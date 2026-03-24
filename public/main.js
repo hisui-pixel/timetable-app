@@ -227,6 +227,11 @@ function createReviews(courseID) {
 
 async function showAvailableCourse(day, period,grade,semester) {
 
+     if (mockCourses.length === 0) {
+        console.log("読み込み中");
+        return;
+    }
+
     let reviews = await getReviews();
     console.log(semester);
 
