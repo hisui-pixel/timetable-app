@@ -357,66 +357,45 @@ h1 {
 }
 
 /* =========================================
-   📱 ここから下はスマホ専用のデザイン設定
+   📱 スマホ専用のデザイン設定（修正版）
    ========================================= */
 @media screen and (max-width: 768px) {
-    /* ① 全体の幅をスマホ画面に合わせる */
-    #app, .filter-container, .blank-box {
+    /* ① 全体の幅をスマホ画面に合わせる（ボタン周りは除外！） */
+    #app, .blank-box {
         width: 100%;
         padding: 0 5px;
         box-sizing: border-box;
     }
 
     h1 {
-        font-size: 20px; /* タイトルを少し小さく */
+        font-size: 20px;
         margin-top: 10px;
         margin-bottom: 15px;
     }
 
-    /* ② 【超重要】表を潰さずに「横スクロール」させる！ */
-    /* これで文字がぐちゃぐちゃになるのを防ぎます */
+    /* ② 表を潰さずに「横スクロール」させる（これがないとスマホで文字が潰れます） */
     .blank-box {
         display: block;
-        overflow-x: auto; /* はみ出た分は横にスワイプできるようにする */
-        white-space: nowrap; /* 勝手に改行させない */
-        -webkit-overflow-scrolling: touch; /* スマホでヌルヌルスクロールさせる */
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
     }
 
     /* スマホの時のマスのサイズを調整 */
     .blank-box td {
-        min-width: 70px; /* マスがこれ以上細くならないように死守 */
+        min-width: 70px;
         height: 80px;
-        font-size: 12px; /* 文字を少し小さく */
+        font-size: 12px;
         padding: 4px;
         white-space: normal; /* マスの中の文字は折り返す */
     }
 
-    /* ③ 上部のボタン類を「縦並び」にして押しやすくする */
-    .filter-container {
-        flex-direction: column; /* 横並びから縦並びに変更 */
-        align-items: stretch; /* 横幅いっぱいに広げる */
-        padding: 10px;
-    }
-
-    .filter-select, .auto-register-btn, .auto-remove-btn {
-        width: 100%; /* ボタンを横幅100%にしてタップしやすく */
-        margin-bottom: 5px;
-    }
-
-    /* 単位数も真ん中に寄せる */
-    .summary-container {
-        margin-left: 0;
-        text-align: center;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* ④ モーダル（ポップアップ）をスマホ画面に収める */
+    /* ③ モーダル（ポップアップ）をスマホ画面に収める */
     .modal-content {
-        padding: 20px; /* 余白40pxはスマホだとデカすぎるので減らす */
+        padding: 20px;
         width: 95%;
-        max-height: 90vh; /* 画面からはみ出さないように */
-        overflow-y: auto; /* 縦スクロール可能に */
+        max-height: 90vh;
+        overflow-y: auto;
     }
 
     #modal-title {
