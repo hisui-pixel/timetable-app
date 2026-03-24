@@ -1,0 +1,76 @@
+{
+  "user_tloka0cu9is": [
+    {
+      "day": "月",
+      "period": "2",
+      "courseId": "21019155",
+      "courseName": "化学概論第一"
+    },
+    {
+      "day": "火",
+      "period": "2",
+      "courseId": "21012142",
+      "courseName": "ASE"
+    },
+    {
+      "day": "水",
+      "period": "2",
+      "courseId": "21019117",
+      "courseName": "線形代数学第一"
+    },
+    {
+      "day": "月",
+      "period": "3",
+      "courseId": "21012168",
+      "courseName": "仏語第一"
+    },
+    {
+      "day": "火",
+      "period": "3",
+      "courseId": "21019105",
+      "courseName": "微分積分学第一"
+    },
+    {
+      "day": "木",
+      "period": "3",
+      "courseId": "21018402",
+      "courseName": "基礎科学実験"
+    },
+    {
+      "day": "金",
+      "period": "3",
+      "courseId": "21012125",
+      "courseName": "AWE"
+    },
+    {
+      "day": "月",
+      "period": "4",
+      "courseId": "21018115",
+      "courseName": "コンピュータリテラシー"
+    },
+    {
+      "day": "火",
+      "period": "4",
+      "courseId": "21019141",
+      "courseName": "物理学概論第一"
+    },
+    {
+      "day": "水",
+      "period": "4",
+      "courseId": "21019129",
+      "courseName": "数学演習第一"
+    },
+    {
+      "day": "木",
+      "period": "4",
+      "courseId": "21018402",
+      "courseName": "基礎科学実験"
+    },
+    {
+      "day": "金",
+      "period": "4",
+      "courseId": "21014203",
+      "courseName": "健康論"
+    }
+  ]
+}

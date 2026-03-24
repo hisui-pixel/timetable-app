@@ -1,0 +1,357 @@
+/* 全体のリセットとモダンなフォント設定 */
+body {
+    margin: 0;
+    font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    
+    /* 🌟 ここが修正ポイント！ */
+    display: flex;
+    flex-direction: column; /* 横並びではなく「縦並び」にする！ */
+    align-items: center;    /* 全体を画面の真ん中に寄せる */
+    min-height: 100vh;
+}
+
+/* 🌟 タイトル、メニュー、表の「幅」をピタッと揃える */
+#app, .filter-container, .blank-box {
+    width: 95%;
+    max-width: 1000px; /* PCで見ても広がりすぎない丁度いい幅 */
+}
+
+#app {
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #1f2937;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+/* 👆 ここから下は、さっきの「時間割表（タイムテーブル）のメインデザイン」に続きます */
+
+/* 🌟 時間割表（タイムテーブル）のメインデザイン */
+.blank-box {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate; /* 影をつけるためにseparateにする */
+    border-spacing: 5px; /* マスとマスの間に少し隙間を作る */
+    margin-bottom: 20px;
+}
+
+.blank-box th {
+    background-color: transparent; /* ヘッダーは透明に */
+    padding: 10px 0;
+    color: #4b5563;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.blank-box td {
+    background-color: #c3ecff; /* 1マスずつを白いカードにする */
+    height: 120px;            /* 👈 120pxから「85px」に縮小して縦幅を抑える！ */
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 12px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+    transition: all 0.2s ease;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1f2937;
+    padding: 8px;            /* 👈 paddingも10pxから「8px」にしてスッキリと */
+    border: none;
+}
+
+/* マウスを乗せたときのデザイン */
+.blank-box td:hover {
+    background-color: #f9fafb;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* 影を強くして「浮き上がる」効果 */
+    cursor: pointer;
+    transform: translateY(-2px); /* 少し上に動かす */
+}
+
+/* 🌟 コントロールパネル（絞り込みとボタン） */
+.filter-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white; /* パネルも白いカードにする */
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.filter-select {
+    padding: 10px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #374151;
+    background-color: #f9fafb;
+    cursor: pointer;
+}
+
+/* ボタンの共通デザイン */
+.auto-register-btn, .auto-remove-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.auto-register-btn {
+    background-color: #10b981; /* 緑 */
+    color: white;
+}
+.auto-register-btn:hover {
+    background-color: #059669;
+    transform: translateY(-1px);
+}
+
+.auto-remove-btn {
+    background-color: #ef4444; /* 赤 */
+    color: white;
+}
+.auto-remove-btn:hover {
+    background-color: #dc2626;
+    transform: translateY(-1px);
+}
+
+/* 合計単位数の表示 */
+.summary-container {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2563eb; /* 青色 */
+    background-color: #e0f2fe;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-left: auto; /* 右寄せにする */
+}
+
+/* 🌟 モーダルのプロ仕様デザイン */
+.modal {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明のグレー */
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px; /* もっと丸く */
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15); /* 強い影 */
+}
+
+.modal.hidden {
+    display: none;
+    opacity: 0;
+}
+
+#modal-title {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+#close-modal-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #6b7280; /* グレー */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* 🌟 モーダル内の授業カード（これぞReact風！） */
+.course-card {
+    border: none; /* 枠線を消す */
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #f9fafb;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03); /* ほんのり影 */
+    transition: all 0.2s ease;
+}
+.course-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* ホバーで少し浮かせる */
+    background-color: white;
+}
+.course-card h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #1f2937;
+}
+.course-card p {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    color: #6b7280;
+}
+.register-btn {
+    width: 100%;
+    padding: 12px; /* もっと押しやすく */
+    background-color: #2563eb; /* 青 */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.register-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.remove-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #ef4444; /* 赤 */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 🌟 トースト通知 */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #10b981; /* 緑 */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    z-index: 2000;
+    transition: all 0.3s ease;
+}
+.toast.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+/* 🌟 モーダルの中の授業リストをスクロールできるようにする */
+#course-list-container {
+    max-height: 60vh; /* 画面の高さの60%を最大サイズにする（はみ出さなくなる） */
+    overflow-y: auto; /* 縦にはみ出した分は「スクロール」で表示させる魔法！ */
+    padding-right: 10px; /* スクロールバーが出た時に、文字と被らないように少し右に余白を開ける */
+}
+
+.reviewListDiv{
+    background-color: "#f9fafb";
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* 🌟 口コミ一覧エリア（JSの className="review-list" と紐付け） */
+.review-list {
+    background-color: #f3f4f6; /* 背景色に合わせて少しグレーに */
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    max-height: 150px; /* 口コミが増えすぎたら... */
+    overflow-y: auto;  /* ここだけスクロールさせる！ */
+}
+
+/* 口コミの中の文字設定 */
+.review-list p {
+    margin: 0 0 10px 0 !important;
+    color: #374151 !important;
+    line-height: 1.5;
+}
+
+/* 🌟 口コミ投稿フォーム全体 */
+.review-container {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 1px dashed #cbd5e1; /* 投稿エリアっぽく点線で囲む */
+}
+
+.review-container h4 {
+    margin-top: 0 !important;
+    margin-bottom: 15px;
+    color: #1f2937;
+    font-size: 16px;
+}
+
+/* スライダー（range）と数値の見た目 */
+.how-hard {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.slider-val {
+    font-weight: bold;
+    color: #2563eb; /* アクセントカラーの青に */
+    display: inline-block;
+    width: 20px;
+    text-align: right;
+}
+
+/* 🌟 テキストエリア（感想入力欄）をリッチに */
+.review-text {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box; /* はみ出し防止 */
+    transition: border-color 0.3s;
+    resize: vertical; /* 縦方向だけサイズ変更可能にする */
+    font-family: inherit; /* 全体のフォントに合わせる */
+}
+
+.review-text:focus {
+    outline: none;
+    border-color: #3b82f6; /* クリックしたら青く光る */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* 🌟 投稿ボタン（緑色で統一感を出す） */
+.post-btn {
+    background-color: #10b981; /* 登録ボタンと色を合わせる */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.post-btn:hover {
+    background-color: #059669; /* 押すと少し濃くなる */
+    transform: translateY(-1px);
+}
+
+.post-btn:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+    transform: none;
+}

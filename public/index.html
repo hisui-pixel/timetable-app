@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEC TimeTable++</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <div id="app">
+        <h1>UEC TimeTable++</h1>
+    </div>
+
+    <div class="filter-container">
+        <select id="grade-select" class="filter-select">
+            <option value="1">1年</option>
+            <option value="2">2年</option>
+            <option value="3">3年</option>
+            <option value="4">4年</option>
+        </select>
+
+        <select id="semester-select" class="filter-select">
+            <option value="前学期">前学期</option>
+            <option value="後学期">後学期</option>
+        </select>
+
+        <select id="affiliation-select" class="filter-select">
+        </select>
+
+        <button id="auto-register-btn" class="auto-register-btn">必修科目を登録</button>
+        <button id="auto-remove-btn" class="auto-remove-btn">全て外す</button>
+
+        <div class="summary-container">
+            🎓 合計登録単位数: <span id="total-credits">0</span> 単位
+        </div>
+    </div>
+
+    <table class="blank-box">
+        <tr>
+            <th> </th>
+            <th>月</th>
+            <th>火</th>
+            <th>水</th>
+            <th>木</th>
+            <th>金</th>
+        </tr>
+        <tr>
+            <th>1 <br> 9:00<br>|<br>10:30</th>
+            <td data-day="月" data-period="1">+</td>
+            <td data-day="火" data-period="1">+</td>
+            <td data-day="水" data-period="1">+</td>
+            <td data-day="木" data-period="1">+</td>
+            <td data-day="金" data-period="1">+</td>
+
+        </tr>
+        <tr>
+            <th>2<br>10:40<br>|<br>12:10</th>
+            <td data-day="月" data-period="2">+</td>
+            <td data-day="火" data-period="2">+</td>
+            <td data-day="水" data-period="2">+</td>
+            <td data-day="木" data-period="2">+</td>
+            <td data-day="金" data-period="2">+</td>
+
+        </tr>
+        <tr>
+            <th>3<br>13:00<br>|<br>14:30</th>
+            <td data-day="月" data-period="3">+</td>
+            <td data-day="火" data-period="3">+</td>
+            <td data-day="水" data-period="3">+</td>
+            <td data-day="木" data-period="3">+</td>
+            <td data-day="金" data-period="3">+</td>
+        </tr>
+        <tr>
+            <th>4<br>14:40<br>|<br>16:10</th>
+            <td data-day="月" data-period="4">+</td>
+            <td data-day="火" data-period="4">+</td>
+            <td data-day="水" data-period="4">+</td>
+            <td data-day="木" data-period="4">+</td>
+            <td data-day="金" data-period="4">+</td>
+        </tr>
+        <tr>
+            <th>5<br>16:20<br>|<br>17:50</th>
+            <td data-day="月" data-period="5">+</td>
+            <td data-day="火" data-period="5">+</td>
+            <td data-day="水" data-period="5">+</td>
+            <td data-day="木" data-period="5">+</td>
+            <td data-day="金" data-period="5">+</td>
+        </tr>
+    </table>
+
+    <div id="course-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="modal-title">ここにタイトル</h2>
+            <p id="modal-info">ここに詳細が出ます</p>
+
+            <div id="course-list-container"></div>
+            <button id="close-modal-btn">閉じる</button>
+        </div>
+    </div>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
