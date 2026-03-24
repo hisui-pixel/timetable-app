@@ -224,6 +224,8 @@ function createReviews(courseID) {
             grade_select.value,
             semester_select.value
         );
+        
+    });
 
     return reviews;
 }
