@@ -56,7 +56,7 @@ async function loadTimetable() {
 
 
 async function deleteReview(reviewId) {
-    const res = await fetch(`/api/review/${reviewId}`, {
+    const res = await fetch(`/api/review`, {
         method: "DELETE",
         headers: {
             "Content-Type": "application/json"
