@@ -36,6 +36,10 @@ async function loadTimetable() {
     const res = await fetch(`/api/timetable?userId=${userId}`);
     const registered = await res.json();
 
+    if (data.grade) grade_select.value = data.grade;
+    if (data.semester) semester_select.value = data.semester;
+    if (data.affiliation) affiliation_select.value = data.affiliation;
+
     console.log("☁️ クラウドからロードした時間割:", registered);
 
     if (registered && registered.length > 0) {
@@ -86,10 +90,13 @@ async function saveTimetable() {
         });
     });
 
-
-    localStorage.setItem("myTimetable", JSON.stringify(registered));
-
     const userId = getMyUserId();
+
+    // 👇 ここ追加
+    const grade = grade_select.value;
+    const semester = semester_select.value;
+    const affiliation = affiliation_select.value;
+
     await fetch('/api/timetable', {
         method: 'POST',
         headers: {
@@ -97,14 +104,13 @@ async function saveTimetable() {
         },
         body: JSON.stringify({
             userId: userId,
-            timetable: registered
+            timetable: registered,
+            grade: grade,
+            semester: semester,
+            affiliation: affiliation
         })
     });
-    console.log("クラウドに時間割をセーブしました！", registered);
 }
-
-
-
 
 
 function openModal(title, info) { //modalの出力関数

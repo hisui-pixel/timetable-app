@@ -22,15 +22,24 @@ export default async function handler(req, res) {
             if (!userId) return res.status(400).json({ error: "userIdが必要です" });
 
             const userTimetable = await timetableCollection.findOne({ userId });
-            return res.status(200).json(userTimetable ? userTimetable.timetable : []);
+            return res.status(200).json(userTimetable || {});
         }
 
         if (req.method === 'POST') {
-            const { userId, timetable } = req.body;
+            const { userId, timetable, grade, semester, affiliation } = req.body;
 
             await timetableCollection.updateOne(
-                { userId },
-                { $set: { userId, timetable, updatedAt: new Date() } },
+                { userId: userId },
+                {
+                    $set: {
+                        userId,
+                        timetable,
+                        grade,
+                        semester,
+                        affiliation,
+                        updatedAt: new Date()
+                    }
+                },
                 { upsert: true }
             );
 
