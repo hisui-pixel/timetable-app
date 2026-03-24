@@ -216,10 +216,14 @@ function createReviews(courseID) {
         postBtn.disabled = true;
 
         await handleReviewSubmit(reviews, courseID);
-        if (target_box) {
-            target_box.click();
-        }
-    });
+        course_list_container.innerHTML = "";
+
+        await showAvailableCourse(
+            target_box.getAttribute("data-day"),
+            target_box.getAttribute("data-period"),
+            grade_select.value,
+            semester_select.value
+        );
 
     return reviews;
 }
@@ -238,7 +242,6 @@ async function showAvailableCourse(day, period,grade,semester) {
     
     course_list_container.innerHTML = "";
 
-    let reviews = await getReviews();
     console.log(semester);
 
     //let selectedGrade=mockCourses.find(sGrade=>{
@@ -255,6 +258,8 @@ async function showAvailableCourse(day, period,grade,semester) {
         let hr = document.createElement("hr");
         course_list_container.appendChild(hr);
 
+        let reviews = await getReviews();
+
         for (let course of availableCourses) {
             let card = document.createElement("div");
 
@@ -265,7 +270,6 @@ async function showAvailableCourse(day, period,grade,semester) {
             <p>担当: ${course.professor}</p>
             `;
 
-            let reviews = await getReviews();
             let reviewContents = reviews.filter((reviews) => {
                 return reviews.courseId === course.id;
             });
