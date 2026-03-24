@@ -208,9 +208,9 @@ async function showAvailableCourse(day, period,grade,semester) {
     let reviews = await getReviews();
     console.log(semester);
 
-    let selectedGrade=mockCourses.find(sGrade=>{
-        sGrade.grade.includes(grade)
-    });
+    //let selectedGrade=mockCourses.find(sGrade=>{
+      //  sGrade.grade.includes(grade)
+    //});
 
 
     let availableCourses = mockCourses.filter(course =>
