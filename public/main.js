@@ -36,8 +36,11 @@ async function loadTimetable() {
     const res = await fetch(`/api/timetable?userId=${userId}`);
     const registered = await res.json();
 
+    updateAffiliationOption();
+
     if (data.grade) grade_select.value = data.grade;
     if (data.semester) semester_select.value = data.semester;
+    updateAffiliationOption();
     if (data.affiliation) affiliation_select.value = data.affiliation;
 
     console.log("☁️ クラウドからロードした時間割:", registered);
