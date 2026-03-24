@@ -374,7 +374,7 @@ h1 {
     /* ③ 【超重要】左側の「時間」の列を限界まで小さくする */
     .blank-box th {
         font-size: 6px; /* 文字を限界まで小さく */
-        width: 20px;    /* 幅を極細に */
+        width: 10px;    /* 幅を極細に */
         padding: 2px 0;
         line-height: 1.2; /* 行間を詰める */
     }
