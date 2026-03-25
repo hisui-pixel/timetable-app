@@ -8,20 +8,20 @@ import {grade4} from './data/grade4/data4.js';
 import { experimentData } from './data/grade1/data_ex.js';
 
 // ① 全部まとめて1つの配列にする
-const Data = [
-    ...grade1_1,
-    ...grade1_2,
-    ...grade2_1,
-    ...grade2_2,
-    ...grade3_1,
-    ...grade3_2,
-    ...grade4,
-    ...experimentData
-];
+const allDataData = {
+    grade1_1,
+    grade1_2,
+    grade2_1,
+    grade2_2,
+    grade3_1,
+    grade3_2,
+    grade4,
+    experimentData
+};
 
 // ② idで重複排除
-const allData = Array.from(
-    new Map(Data.map(c => [c.id, c])).values()
-);
+//const allData = Array.from(
+//    new Map(Data.map(c => [c.id, c])).values()
+//);
 
 export default allData;

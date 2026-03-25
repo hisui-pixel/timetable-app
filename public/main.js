@@ -36,7 +36,6 @@ async function loadTimetable() {
     const res = await fetch(`/api/timetable?userId=${userId}`);
     const registered = await res.json();
 
-    updateAffiliationOption();
 
     if (data.grade) grade_select.value = data.grade;
     if (data.semester) semester_select.value = data.semester;
