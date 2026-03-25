@@ -400,8 +400,8 @@ h1 {
         overflow-y: auto;
     }
 
-    .time{
-        width:20px;
+    .th-cell{
+        width:30px;
     }
 
     #modal-title {
