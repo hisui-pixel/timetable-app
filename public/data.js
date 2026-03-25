@@ -8,7 +8,7 @@ import {grade4} from './data/grade4/data4.js';
 import { experimentData } from './data/grade1/data_ex.js';
 
 // ① 全部まとめて1つの配列にする
-const allDataData = {
+const allData = {
     grade1_1,
     grade1_2,
     grade2_1,
