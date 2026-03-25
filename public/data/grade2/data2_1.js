@@ -1722,7 +1722,7 @@ export const grade2_1 = [
         "period": "2",
         "professor": "佐藤　賢一",
         "type": "必修",
-        "affiliation": "IA",
+        "affiliation": "共通",
         "credits": 2,
         "grade": [
             2
