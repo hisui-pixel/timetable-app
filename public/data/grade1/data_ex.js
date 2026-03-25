@@ -1,7 +1,7 @@
 // 自動生成・合体されたシラバスデータ
 export const experimentData = [
     {
-        "id": "21018401",
+        "id": "210184011",
         "name": "基礎科学実験",
         "day": "月",
         "period": "3",
@@ -39,7 +39,7 @@ export const experimentData = [
         "semester": ['前学期', '後学期']
     },
     {
-        "id": "21018402",
+        "id": "210184021",
         "name": "基礎科学実験",
         "day": "木",
         "period": "3",
@@ -77,7 +77,7 @@ export const experimentData = [
         "semester": ['前学期', '後学期']
     },
     {
-        "id": "21018407",
+        "id": "210184071",
         "name": "基礎科学実験",
         "day": "木",
         "period": "6",
@@ -131,7 +131,7 @@ export const experimentData = [
         "semester": ['前学期', '後学期']
     },
     {
-        "id": "21018403",
+        "id": "210184031",
         "name": "基礎科学実験",
         "day": "金",
         "period": "3",
