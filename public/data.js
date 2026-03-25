@@ -9,14 +9,14 @@ import { experimentData } from './data/grade1/data_ex.js';
 
 // ① 全部まとめて1つの配列にする
 const Data = {
-    ...experimentData
+    ...experimentData,
     ...grade4,
     ...grade3_2,
     ...grade3_1,
     ...grade2_2,
     ...grade2_1,
     ...grade1_2,
-    ...grade1_1,
+    ...grade1_1
 };
 
 // ② idで重複排除
