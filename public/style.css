@@ -394,6 +394,10 @@ h1 {
         overflow-y: auto;
     }
 
+    .time{
+        width:20px;
+    }
+
     #modal-title {
         font-size: 18px;
     }
