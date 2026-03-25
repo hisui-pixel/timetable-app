@@ -361,7 +361,6 @@ h1 {
 @media screen and (max-width: 768px) {
     /* ① 全体を画面幅に合わせる（ボタン周りはそのまま！） */
     #app, .blank-box {
-        width: 100%;
         box-sizing: border-box;
     }
 
