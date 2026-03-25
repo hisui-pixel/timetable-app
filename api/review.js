@@ -38,7 +38,7 @@ export default async function handler(req, res) {
             const review = await reviewsCollection.findOne({ id: reviewId });
 
             if (!review) {
-                return res.status(404).json({ error: "レビューが存在しない" });
+                return res.status(404).json({ error: "レビューが存在しません" });
             }
 
             // ② 投稿者チェック

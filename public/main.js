@@ -34,7 +34,9 @@ async function loadTimetable() {
     const userId = getMyUserId();
 
     const res = await fetch(`/api/timetable?userId=${userId}`);
-    const registered = await res.json();
+    const data = await res.json();
+
+    const registered=data.timetable||[];
 
 
     if (data.grade) grade_select.value = data.grade;
