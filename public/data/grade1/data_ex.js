@@ -8,10 +8,10 @@ export const experimentData = [
         "professor": "大饗・菊池・村上・饗庭・〇吉村・〇須田・*高田",
         "type": "必修",
         "affiliation": [
-            "1",
-            "2",
-            "3",
-            "4",
+            "11",
+            "12",
+            "7",
+            "8",
         ],
         "credits": 1,
         "grade": [
@@ -27,10 +27,10 @@ export const experimentData = [
         "professor": "大饗・菊池・村上・饗庭・〇吉村・〇須田・*高田",
         "type": "必修",
         "affiliation": [
-            "1",
-            "2",
-            "3",
-            "4",
+            "11",
+            "12",
+            "7",
+            "8",
         ],
         "credits": 1,
         "grade": [
@@ -48,8 +48,8 @@ export const experimentData = [
         "affiliation": [
             "5",
             "6",
-            "7",
-            "8",
+            "3",
+            "4",
         ],
         "credits": 1,
         "grade": [
@@ -67,8 +67,8 @@ export const experimentData = [
         "affiliation": [
             "5",
             "6",
-            "7",
-            "8",
+            "3",
+            "4",
         ],
         "credits": 1,
         "grade": [
@@ -140,8 +140,8 @@ export const experimentData = [
         "affiliation": [
             "9",
             "10",
-            "11",
-            "12"
+            "1",
+            "2"
         ],
         "credits": 1,
         "grade": [
@@ -159,8 +159,8 @@ export const experimentData = [
         "affiliation": [
             "9",
             "10",
-            "11",
-            "12"
+            "1",
+            "2"
         ],
         "credits": 1,
         "grade": [
