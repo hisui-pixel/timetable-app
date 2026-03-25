@@ -577,12 +577,12 @@ blank_boxes.forEach((element) => {
                 updateTotalCredits();
             });
 
-            course_list_container.append(removeBtn);
             openModal(courseName, infoText);
-
-
-            showAvailableCourse(day, period,grade_select.value,semester_select.value);
-
+            
+            
+            await showAvailableCourse(day, period,grade_select.value,semester_select.value);
+            
+            course_list_container.append(removeBtn);
         } else {
             let infoText = day + "曜日の" + period + "限に新しい授業を追加しますか？";
 
