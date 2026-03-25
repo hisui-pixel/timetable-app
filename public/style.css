@@ -362,6 +362,7 @@ h1 {
     /* ① 全体を画面幅に合わせる（ボタン周りはそのまま！） */
     #app, .blank-box {
         box-sizing: border-box;
+        width: 100%;
     }
 
     /* ② スクロールを廃止し、表全体の隙間を詰める */
@@ -377,7 +378,14 @@ h1 {
         padding: 2px 0;
         line-height: 1.2; /* 行間を詰める */
     }
-
+    .time-cell {
+        height: 120px;       /* ← 好きな高さに調整 */
+        display: flex;
+        width: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     /* ④ 授業が入るマス（月〜金）のサイズ調整 */
     .blank-box td {
         height: 90px;    /* 縦幅を少しコンパクトに */
