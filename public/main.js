@@ -536,7 +536,7 @@ auto_remove_btn.addEventListener("click", () => {
 
 
 blank_boxes.forEach((element) => {
-    element.addEventListener('click', () => {
+    element.addEventListener('click', async() => {
         target_box = element;
 
         let day = element.getAttribute("data-day");
@@ -582,7 +582,7 @@ blank_boxes.forEach((element) => {
             
             await showAvailableCourse(day, period,grade_select.value,semester_select.value);
             
-            course_list_container.append(removeBtn);
+            course_list_container.prepend(removeBtn);
         } else {
             let infoText = day + "曜日の" + period + "限に新しい授業を追加しますか？";
 
