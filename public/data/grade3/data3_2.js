@@ -228,7 +228,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21124218",
+        "id": "211242181",
         "name": "経営・社会情報学実験",
         "day": "月",
         "period": "3",
@@ -273,7 +273,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21124239",
+        "id": "211242391",
         "name": "デザイン思考・データサイエンス実験",
         "day": "月",
         "period": "3",
@@ -431,7 +431,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324245",
+        "id": "213242451",
         "name": "物理工学実験第二",
         "day": "月",
         "period": "3",
@@ -445,7 +445,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324245",
+        "id": "213242452",
         "name": "物理工学実験第二",
         "day": "月",
         "period": "4",
@@ -515,7 +515,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21124224",
+        "id": "211242241",
         "name": "情報数理工学実験第二A",
         "day": "水",
         "period": "3",
@@ -543,7 +543,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21124234",
+        "id": "211242341",
         "name": "コンピュータサイエンス実験第二A",
         "day": "水",
         "period": "3",
@@ -776,7 +776,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21124225",
+        "id": "211242251",
         "name": "情報数理工学実験第二B",
         "day": "水",
         "period": "4",
@@ -804,7 +804,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21124235",
+        "id": "211242351",
         "name": "コンピュータサイエンス実験第二B",
         "day": "水",
         "period": "4",
@@ -1046,7 +1046,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21224248",
+        "id": "212242481",
         "name": "流体力学および演習",
         "day": "火",
         "period": "2",
@@ -1124,7 +1124,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324216",
+        "id": "213242161",
         "name": "流体力学および演習",
         "day": "火",
         "period": "2",
@@ -1202,7 +1202,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21224222",
+        "id": "212242221",
         "name": "セキュリティ情報学実験",
         "day": "火",
         "period": "3",
@@ -1247,7 +1247,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324225",
+        "id": "213242251",
         "name": "電子工学実験第二",
         "day": "火",
         "period": "3",
@@ -1261,7 +1261,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324225",
+        "id": "213242252",
         "name": "電子工学実験第二",
         "day": "火",
         "period": "4",
@@ -1382,7 +1382,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21224245",
+        "id": "212242451",
         "name": "マシンデザインB",
         "day": "火",
         "period": "3",
@@ -1416,7 +1416,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324214",
+        "id": "213242141",
         "name": "マシンデザインB",
         "day": "火",
         "period": "3",
@@ -2153,7 +2153,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324241",
+        "id": "213242411",
         "name": "光工学実験第二",
         "day": "水",
         "period": "3",
@@ -2167,7 +2167,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324241",
+        "id": "213242412",
         "name": "光工学実験第二",
         "day": "水",
         "period": "4",
@@ -2209,7 +2209,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324249",
+        "id": "213242491",
         "name": "化学生命工学実験第二",
         "day": "水",
         "period": "3",
@@ -2223,7 +2223,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324249",
+        "id": "213242492",
         "name": "化学生命工学実験第二",
         "day": "水",
         "period": "4",
@@ -2307,7 +2307,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21224246",
+        "id": "212242461",
         "name": "マシンデザインB",
         "day": "水",
         "period": "3",
@@ -2439,7 +2439,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324215",
+        "id": "213242151",
         "name": "マシンデザインB",
         "day": "水",
         "period": "3",
@@ -2966,7 +2966,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21124209",
+        "id": "211242091",
         "name": "メディア情報学実験",
         "day": "木",
         "period": "3",
@@ -4139,7 +4139,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21224231",
+        "id": "212242311",
         "name": "情報通信工学実験B1",
         "day": "金",
         "period": "3",
@@ -4153,7 +4153,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21224241",
+        "id": "212242412",
         "name": "電子情報学実験B1",
         "day": "金",
         "period": "2",
@@ -4167,7 +4167,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21224241",
+        "id": "212242411",
         "name": "電子情報学実験B1",
         "day": "金",
         "period": "3",
@@ -4535,7 +4535,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21224244",
+        "id": "212242441",
         "name": "メカトロニクス基礎実験B",
         "day": "金",
         "period": "4",
@@ -4567,7 +4567,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324213",
+        "id": "213242131",
         "name": "知能機械工学基礎実験第二",
         "day": "金",
         "period": "4",
@@ -4752,7 +4752,7 @@ export const grade3_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21224242",
+        "id": "212242422",
         "name": "電子情報学実験B2",
         "day": "金",
         "period": "4",

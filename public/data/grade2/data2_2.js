@@ -940,13 +940,13 @@ export const grade2_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21322211",
-        "name": "電磁気学および演習",
+        "id": "213222111",
+        "name": "電磁気学および演習(クラスA)",
         "day": "火",
         "period": "1",
         "professor": "谷口　淳子",
         "type": "必修",
-        "affiliation": "共通",
+        "affiliation": "機械システム",
         "credits": 1,
         "grade": [
             2
@@ -955,12 +955,12 @@ export const grade2_2 = [
     },
     {
         "id": "21322211",
-        "name": "電磁気学および演習",
+        "name": "電磁気学および演習(クラスA)",
         "day": "火",
         "period": "2",
         "professor": "谷口　淳子",
         "type": "必修",
-        "affiliation": "共通",
+        "affiliation": "機械システム",
         "credits": 1,
         "grade": [
             2
@@ -2134,7 +2134,7 @@ export const grade2_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21224217",
+        "id": "212242171",
         "name": "メカノデザイン",
         "day": "水",
         "period": "3",
@@ -2170,7 +2170,7 @@ export const grade2_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21322209",
+        "id": "213222091",
         "name": "電磁気学および演習(クラスB)",
         "day": "水",
         "period": "3",
@@ -2204,13 +2204,13 @@ export const grade2_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21322212",
-        "name": "電磁気学および演習",
+        "id": "213222121",
+        "name": "電磁気学および演習(クラスC)",
         "day": "水",
         "period": "3",
         "professor": "斎藤　弘樹",
         "type": "必修",
-        "affiliation": "共通",
+        "affiliation": ["光工学","物理工学"],
         "credits": 1,
         "grade": [
             2
@@ -2219,12 +2219,12 @@ export const grade2_2 = [
     },
     {
         "id": "21322212",
-        "name": "電磁気学および演習",
+        "name": "電磁気学および演習(クラスC)",
         "day": "水",
         "period": "4",
         "professor": "斎藤　弘樹",
         "type": "必修",
-        "affiliation": "共通",
+        "affiliation": ["光工学","物理工学"],
         "credits": 1,
         "grade": [
             2
@@ -2816,7 +2816,7 @@ export const grade2_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21224214",
+        "id": "212242141",
         "name": "機械力学および演習",
         "day": "木",
         "period": "3",
@@ -2850,7 +2850,7 @@ export const grade2_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21224215",
+        "id": "212242151",
         "name": "材料力学および演習",
         "day": "木",
         "period": "3",
@@ -2878,7 +2878,7 @@ export const grade2_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324202",
+        "id": "213242021",
         "name": "機械力学および演習",
         "day": "木",
         "period": "3",
@@ -2912,7 +2912,7 @@ export const grade2_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324203",
+        "id": "213242031",
         "name": "材料力学および演習",
         "day": "木",
         "period": "3",
@@ -2940,7 +2940,7 @@ export const grade2_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324206",
+        "id": "213242061",
         "name": "理工学基礎実験",
         "day": "木",
         "period": "3",
@@ -3577,7 +3577,7 @@ export const grade2_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21224213",
+        "id": "212242131",
         "name": "機械力学および演習",
         "day": "金",
         "period": "2",
@@ -3628,7 +3628,7 @@ export const grade2_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21224216",
+        "id": "212242161",
         "name": "材料力学および演習",
         "day": "金",
         "period": "3",
@@ -3646,15 +3646,12 @@ export const grade2_2 = [
     },
     {
         "id": "21322210",
-        "name": "電磁気学および演習(クラスC)",
+        "name": "電磁気学および演習(クラスD)",
         "day": "金",
         "period": "2",
         "professor": "宮本　洋子",
         "type": "必修",
-        "affiliation": [
-            "光工学",
-            "物理工学"
-        ],
+        "affiliation": ["物理工学","化学生命"],
         "credits": 1,
         "grade": [
             2
@@ -3663,15 +3660,12 @@ export const grade2_2 = [
     },
     {
         "id": "21322210",
-        "name": "電磁気学および演習(クラスC)",
+        "name": "電磁気学および演習(クラスD)",
         "day": "金",
         "period": "3",
         "professor": "宮本　洋子",
         "type": "必修",
-        "affiliation": [
-            "光工学",
-            "物理工学"
-        ],
+        "affiliation": ["物理工学","化学生命"],
         "credits": 1,
         "grade": [
             2
@@ -3696,7 +3690,7 @@ export const grade2_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324201",
+        "id": "213242011",
         "name": "機械力学および演習",
         "day": "金",
         "period": "2",
@@ -3713,7 +3707,7 @@ export const grade2_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324201",
+        "id": "2132420",
         "name": "機械力学および演習",
         "day": "金",
         "period": "3",
@@ -3730,7 +3724,7 @@ export const grade2_2 = [
         "semester": "後学期"
     },
     {
-        "id": "21324204",
+        "id": "213242041",
         "name": "材料力学および演習",
         "day": "金",
         "period": "2",

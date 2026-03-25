@@ -152,6 +152,62 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
+        "id": "211241101",
+        "name": "プログラミング言語実験",
+        "day": "月",
+        "period": "2",
+        "professor": "織田・柏原・庄野・若月",
+        "type": "必修",
+        "affiliation": ["メディア情報学","経営社会情報"],
+        "credits": 2,
+        "grade": [
+            3
+        ],
+        "semester": "前学期"
+    },
+    {
+        "id": "211241102",
+        "name": "プログラミング言語実験",
+        "day": "月",
+        "period": "3",
+        "professor": "織田・柏原・庄野・若月",
+        "type": "必修",
+        "affiliation": ["メディア情報学","経営社会情報"],
+        "credits": 2,
+        "grade": [
+            3
+        ],
+        "semester": "前学期"
+    },
+    {
+        "id": "211241103",
+        "name": "プログラミング言語実験",
+        "day": "金",
+        "period": "3",
+        "professor": "松本・市野・宮原 ",
+        "type": "必修",
+        "affiliation": "セキュリティ情報",
+        "credits": 2,
+        "grade": [
+            3
+        ],
+        "semester": "前学期"
+    },
+    {
+        "id": "211241104",
+        "name": "プログラミング言語実験",
+        "day": "金",
+        "period": "4",
+        "professor": "松本・市野・宮原 ",
+        "type": "必修",
+        "affiliation": "セキュリティ情報",
+        "credits": 2,
+        "grade": [
+            3
+        ],
+        "semester": "前学期"
+    },
+    {
         "id": "21124110",
         "name": "メディアリテラシー",
         "day": "月",
@@ -166,7 +222,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21124115",
+        "id": "211241151",
         "name": "情報数理工学実験第一",
         "day": "月",
         "period": "3",
@@ -194,7 +250,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21124115",
+        "id": "211241151",
         "name": "情報数理工学実験第一",
         "day": "水",
         "period": "3",
@@ -208,7 +264,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21124115",
+        "id": "211241151",
         "name": "情報数理工学実験第一",
         "day": "水",
         "period": "4",
@@ -222,7 +278,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21124124",
+        "id": "211241241",
         "name": "コンピュータサイエンス実験第一",
         "day": "月",
         "period": "3",
@@ -250,7 +306,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21124124",
+        "id": "211241241",
         "name": "コンピュータサイエンス実験第一",
         "day": "水",
         "period": "3",
@@ -727,7 +783,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21224121",
+        "id": "212241211",
         "name": "基礎制御工学および演習",
         "day": "火",
         "period": "1",
@@ -1031,7 +1087,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21224123",
+        "id": "212241231",
         "name": "マシンデザインA",
         "day": "火",
         "period": "3",
@@ -1050,42 +1106,6 @@ export const grade3_1 = [
     },
     {
         "id": "21224123",
-        "name": "マシンデザインA",
-        "day": "火",
-        "period": "4",
-        "professor": "増田・○私市・○西浦・○清水・○藤川",
-        "type": "必修",
-        "affiliation": [
-            "計測制御システム",
-            "先端ロボティクス",
-            "機械システム"
-        ],
-        "credits": 2,
-        "grade": [
-            3
-        ],
-        "semester": "前学期"
-    },
-    {
-        "id": "21324102",
-        "name": "マシンデザインA",
-        "day": "火",
-        "period": "3",
-        "professor": "増田・○私市・○西浦・○清水・○藤川",
-        "type": "必修",
-        "affiliation": [
-            "計測制御システム",
-            "先端ロボティクス",
-            "機械システム"
-        ],
-        "credits": 2,
-        "grade": [
-            3
-        ],
-        "semester": "前学期"
-    },
-    {
-        "id": "21324102",
         "name": "マシンデザインA",
         "day": "火",
         "period": "4",
@@ -1718,7 +1738,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21324113",
+        "id": "213241131",
         "name": "電子工学実験第一",
         "day": "水",
         "period": "2",
@@ -1732,7 +1752,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21324113",
+        "id": "213241132",
         "name": "電子工学実験第一",
         "day": "水",
         "period": "3",
@@ -1774,7 +1794,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21324122",
+        "id": "213241221",
         "name": "光工学実験第一",
         "day": "水",
         "period": "3",
@@ -1788,7 +1808,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21324122",
+        "id": "213241222",
         "name": "光工学実験第一",
         "day": "水",
         "period": "4",
@@ -1816,7 +1836,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21324127",
+        "id": "213241271",
         "name": "物理工学実験第一",
         "day": "水",
         "period": "3",
@@ -1830,7 +1850,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21324127",
+        "id": "213241272",
         "name": "物理工学実験第一",
         "day": "水",
         "period": "4",
@@ -1858,7 +1878,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21324131",
+        "id": "213241311",
         "name": "化学生命工学実験第一",
         "day": "水",
         "period": "3",
@@ -1872,7 +1892,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21324131",
+        "id": "213241312",
         "name": "化学生命工学実験第一",
         "day": "水",
         "period": "4",
@@ -3617,7 +3637,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21224113",
+        "id": "212241131",
         "name": "情報通信工学実験A",
         "day": "金",
         "period": "3",
@@ -3631,7 +3651,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21224113",
+        "id": "212241132",
         "name": "情報通信工学実験A",
         "day": "金",
         "period": "4",
@@ -3659,7 +3679,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21224119",
+        "id": "212241191",
         "name": "電子情報学実験A",
         "day": "金",
         "period": "3",
@@ -3673,7 +3693,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21224119",
+        "id": "212241192",
         "name": "電子情報学実験A",
         "day": "金",
         "period": "4",
@@ -3820,7 +3840,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21224122",
+        "id": "212241221",
         "name": "メカトロニクス基礎実験A",
         "day": "金",
         "period": "3",
@@ -3896,7 +3916,7 @@ export const grade3_1 = [
         "semester": "前学期"
     },
     {
-        "id": "21324101",
+        "id": "213241011",
         "name": "知能機械工学基礎実験第一",
         "day": "金",
         "period": "3",
