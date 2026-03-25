@@ -1581,7 +1581,7 @@ export const grade2_1 = [
         "day": "水",
         "period": "1",
         "professor": "長岡　英",
-        "type": "必修",
+        "type": "選択",
         "affiliation": "共通",
         "credits": 2,
         "grade": [
@@ -1595,7 +1595,7 @@ export const grade2_1 = [
         "day": "水",
         "period": "1",
         "professor": "鈴木　邦成",
-        "type": "必修",
+        "type": "選択",
         "affiliation": "共通",
         "credits": 2,
         "grade": [
@@ -1609,8 +1609,8 @@ export const grade2_1 = [
         "day": "水",
         "period": "1",
         "professor": "佐藤　賢一",
-        "type": "必修",
-        "affiliation": "IA",
+        "type": "選択",
+        "affiliation": "共通",
         "credits": 2,
         "grade": [
             2
