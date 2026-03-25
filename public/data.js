@@ -8,7 +8,7 @@ import {grade4} from './data/grade4/data4.js';
 import { experimentData } from './data/grade1/data_ex.js';
 
 // ① 全部まとめて1つの配列にする
-const Data = {
+const Data = [
     ...experimentData,
     ...grade4,
     ...grade3_2,
@@ -17,7 +17,7 @@ const Data = {
     ...grade2_1,
     ...grade1_2,
     ...grade1_1
-};
+];
 
 // ② idで重複排除
 const allData = Array.from(
