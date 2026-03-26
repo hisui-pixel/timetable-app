@@ -127,7 +127,8 @@ h1 {
 
 /* ホバー */
 .filter-select:hover {
-  background-color: gray;
+  background-color: #48cbdc;
+    transform: translateY(-1px);
 }
 
 /* option（最低限） */
