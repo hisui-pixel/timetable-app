@@ -469,7 +469,7 @@ auto_register_btn.addEventListener("click", () => {
         return course.type === "必修" &&
             course.grade.includes(selectedGrade) &&
             course.semester.includes(selectedSemester) &&
-        course.affiliation.includes(selectedAffiliation); // 🌟 これだけで「5組専用」も「共通」も完璧に拾える！
+        course.affiliation.some( a => a ===selectedAffiliation); 
     });
 
     console.log(requiredCourses);
