@@ -406,6 +406,11 @@ h1 {
         max-height: 85vh;
         overflow-y: auto;
     }
+    .note{
+        font-size: 10px;
+        color: #ec3013;
+
+    }
     #modal-title {
         font-size: 18px;
     }
