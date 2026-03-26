@@ -366,30 +366,37 @@ h1 {
 
     /* ② スクロールを廃止し、表全体の隙間を詰める */
     .blank-box {
-        border-spacing: 2px; /* マスの隙間を5pxから2pxにギュッと詰める */
+        border-spacing: 2px; 
+        table-layout: fixed;
+        border-spacing: 2px;
         margin: 0;
     }
 
     /* ③ 【超重要】左側の「時間」の列を限界まで小さくする */
-    .blank-box th {
-        font-size: 6px; /* 文字を限界まで小さく */
-        width: 15px;    /* 幅を極細に */
+    .blank-box .th-cell {
+        font-size: 8px; /* 文字を限界まで小さく */
+        width: 30px;    /* 幅を極細に */
         padding: 2px 0;
-        line-height: 1.2; /* 行間を詰める */
+        text-align:center;
+        overflow: hidden;
+    }
+    .blank-box th:not(.th-cell){
+        font-size: 10px;
     }
     .time-cell {
-        height: 120px;       /* ← 好きな高さに調整 */
         display: flex;
-        width: 10px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        line-height: 1.1;
     }
     /* ④ 授業が入るマス（月〜金）のサイズ調整 */
     .blank-box td {
-        height: 90px;    /* 縦幅を少しコンパクトに */
-        font-size: 8px; /* 授業名が入りやすいように少し小さく */
-        padding: 3px;    /* 内側の余白を削って広く使う */
+        height: 80px;    /* 縦幅を少しコンパクトに */
+        font-size: 9px; /* 授業名が入りやすいように少し小さく */
+        padding: 2px;    /* 内側の余白を削って広く使う */
+        overflow: hidden;
+        word-break: break-all;
     }
 
     /* ⑤ モーダル（ポップアップ）のはみ出し防止 */
@@ -399,11 +406,6 @@ h1 {
         max-height: 85vh;
         overflow-y: auto;
     }
-
-    .th-cell{
-        width:10px;
-    }
-
     #modal-title {
         font-size: 18px;
     }
