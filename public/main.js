@@ -469,7 +469,11 @@ auto_register_btn.addEventListener("click", () => {
         return course.type === "必修" &&
             course.grade.includes(selectedGrade) &&
             course.semester.includes(selectedSemester) &&
-        course.affiliation.some( a => a ===selectedAffiliation); 
+        course.affiliation&&(
+            Array.isArray(course.affiliation)
+            ?course.affiliation.some(a=>a===selectedAffiliation)
+            :course.affiliation===selectedAffiliation
+        );
     });
 
     console.log(requiredCourses);
