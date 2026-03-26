@@ -93,29 +93,47 @@ h1 {
     cursor: pointer;
 }
 */
-select{
-    margin: 0 auto;
-    color: #ec6f66;
-    width: 120px;
-    padding: 5px 15px;
-    height: 35px;
-    cursor: pointer;
+/* =========================
+   🎯 カスタムselect（安定版）
+   ========================= */
+
+.filter-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  padding: 10px 40px 10px 15px; /* 右に余白（矢印用） */
+  font-weight: bold;
+  color: #374151;
+
+  cursor: pointer;
+
+  /* ▼ 矢印（SVGで安定） */
+  background-color: #2563eb;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
 }
 
-select:hover{
-    background-color: transparent;
-    color: white;
+/* フォーカス */
+.filter-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
 }
 
-select option{
-    background-color: black;
-    color: white;
-    padding: 10px 15px;
-    cursor: pointer;
+/* ホバー */
+.filter-select:hover {
+  background-color: #ffffff;
 }
 
-select option:hover{
-    color: #ec6f66;
+/* option（最低限） */
+.filter-select option {
+  color: #111;
 }
 
 /* ボタンの共通デザイン */
