@@ -21,7 +21,7 @@ export const grade2_1 = [
         "period": "1",
         "professor": "水戸　和幸",
         "type": "必修",
-        "affiliation": "共通",
+        "affiliation": ["IA","IB"],
         "credits": 2,
         "grade": [
             2
@@ -35,7 +35,7 @@ export const grade2_1 = [
         "period": "1",
         "professor": "板倉　直明",
         "type": "必修",
-        "affiliation": "共通",
+        "affiliation": ["IB","IC"],
         "credits": 2,
         "grade": [
             2
