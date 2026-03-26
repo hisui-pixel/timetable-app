@@ -96,29 +96,25 @@ h1 {
 select{
     margin: 0 auto;
     color: #ec6f66;
-    width: 80px;
-    padding: 15px;
-    height: 25px;
+    width: 120px;
+    padding: 5px 15px;
+    height: 35px;
     cursor: pointer;
 }
 
 select:hover{
     background-color: transparent;
     color: white;
-    padding: 15px 5px 15px 25px;
 }
 
 select option{
     background-color: black;
     color: white;
-    width: 10px 15px;
-    height: 20px;
+    padding: 10px 15px;
     cursor: pointer;
 }
 
 select option:hover{
-    padding-left: 25px;
-    width: 55px;
     color: #ec6f66;
 }
 
