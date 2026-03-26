@@ -82,39 +82,44 @@ h1 {
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
-
+/*
 .filter-select {
-    display: inline-flex;
-    align-items: center;
-    position: relative;
+    padding: 10px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #374151;
+    background-color: #f9fafb;
+    cursor: pointer;
 }
-
-.filter-select::after {
-    position: absolute;
-    right: 15px;
-    width: 10px;
-    height: 7px;
-    background-color: #535353;
-    clip-path: polygon(0 0, 100% 0, 50% 100%);
-    content: '';
-    pointer-events: none;
-}
-
-.filter-select select {
-    appearance: none;
-    min-width: 230px;
-    height: 2.8em;
-    padding: .4em calc(.8em + 30px) .4em .8em;
-    border: none;
-    border-bottom: 2px solid #c6effb;
-    background-color: #fff;
-    color: #333333;
-    font-size: 1em;
+*/
+select{
+    margin: 0 auto;
+    color: #ec6f66;
+    width: 80px;
+    padding: 15px;
+    height: 25px;
     cursor: pointer;
 }
 
-.filter-select select:focus {
-    outline: none;
+select:hover{
+    background-color: transparent;
+    color: white;
+    padding: 15px 5px 15px 25px;
+}
+
+select option{
+    background-color: black;
+    color: white;
+    width: 10px 15px;
+    height: 20px;
+    cursor: pointer;
+}
+
+select option:hover{
+    padding-left: 25px;
+    width: 55px;
+    color: #ec6f66;
 }
 
 /* ボタンの共通デザイン */
