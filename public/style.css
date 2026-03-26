@@ -127,7 +127,7 @@ h1 {
 
 /* ホバー */
 .filter-select:hover {
-  background-color: #ffffff;
+  background-color: gray;
 }
 
 /* option（最低限） */
