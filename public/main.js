@@ -44,7 +44,7 @@ async function loadTimetable() {
     updateAffiliationOption();
     if (data.affiliation) affiliation_select.value = data.affiliation;
 
-    console.log("☁️ クラウドからロードした時間割:", registered);
+    //console.log("☁️ クラウドからロードした時間割:", registered);
 
     if (registered && registered.length > 0) {
         registered.forEach((data) => {
@@ -252,7 +252,7 @@ async function showAvailableCourse(day, period,grade,semester) {
     
     course_list_container.innerHTML = "";
 
-    console.log(semester);
+    //console.log(semester);
 
     //let selectedGrade=mockCourses.find(sGrade=>{
       //  sGrade.grade.includes(grade)
@@ -457,7 +457,7 @@ updateAffiliationOption();
 
 // 🌟 一斉登録ボタンの処理
 auto_register_btn.addEventListener("click", () => {
-    console.log(affiliation_select.value);
+    //console.log(affiliation_select.value);
     let selectedGrade = parseInt(grade_select.value);
     let selectedSemester = semester_select.value;
     let selectedAffiliation = affiliation_select.value;
@@ -476,7 +476,7 @@ auto_register_btn.addEventListener("click", () => {
         );
     });
 
-    console.log(requiredCourses);
+    //console.log(requiredCourses);
 
     // ① 条件に合う必修科目が無ければ、何もせずに終わる
     if (requiredCourses.length === 0) {
