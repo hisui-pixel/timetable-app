@@ -224,7 +224,7 @@ export const grade2_1 = [
         "professor": "芳原　容英",
         "type": "必修",
         "affiliation": "共通",
-        "credits": 2,
+        "credits": 1,
         "grade": [
             2
         ],
@@ -314,7 +314,7 @@ export const grade2_1 = [
         "professor": "芳原　容英",
         "type": "必修",
         "affiliation": "共通",
-        "credits": 2,
+        "credits": 1,
         "grade": [
             2
         ],
@@ -1555,7 +1555,7 @@ export const grade2_1 = [
         "professor": "芳原　容英",
         "type": "必修",
         "affiliation": "共通",
-        "credits": 2,
+        "credits": 1,
         "grade": [
             2
         ],
@@ -1969,7 +1969,7 @@ export const grade2_1 = [
         "professor": "内田（雅）・村松（大）",
         "type": "必修",
         "affiliation": "Mエリア",
-        "credits": 2,
+        "credits": 1,
         "grade": [
             2
         ],
